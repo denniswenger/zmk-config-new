@@ -6,8 +6,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4,k5) &ht LGUI k1  &ht LCTRL k2  &ht LALT k3  &ht LSHIFT k4  &ht LA(LC(LG(LSHIFT))) k5
-#define HRMR(k1,k2,k3,k4,k5) &ht LA(LC(LG(LSHIFT))) k1  &ht LSHIFT k2  &ht LALT k3  &ht LCTRL k4  &ht LGUI k5
+#define HRML(k1,k2,k3,k4,k5) &ht LGUI k1  &ht LCTRL k2  &ht LALT k3  &ht LSHFT k4  &ht LA(LC(LG(LSHFT))) k5
+#define HRMR(k1,k2,k3,k4,k5) &ht LA(LC(LG(LSHFT))) k1  &ht LSHFT k2  &ht LALT k3  &ht LCTRL k4  &ht LGUI k5
 
 / {
     behaviors {
@@ -15,7 +15,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <220>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
@@ -73,10 +73,10 @@
             &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │ MUTE     │ VOL d    │ VOL u    │ PLY/PSE  │   │  LEFT    │  DOWN    │  UP      │  RIGHT   │ R Click  │
-           &trans   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP   &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &mkp RCLK
+           &trans   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP   &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │ BRGHT d  │ BRGHT u  │          │   │          │          │          │          │ L Click  │
-            &trans    &trans     &C_BRI_DN   &C_BRI_UP  &trans         &trans     &trans     &trans     &trans     &mkp LCLK
+            &trans    &trans     &kp C_BRI_DN  &kp C_BRI_UP  &trans    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
