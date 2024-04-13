@@ -21,7 +21,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        lht: hold_tap {
+        lht: layer_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
