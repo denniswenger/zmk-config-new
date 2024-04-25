@@ -15,7 +15,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <180>;
+            tapping-term-ms = <175>;
             quick-tap-ms = <170>;
             require-prior-idle-ms = <120>;
             bindings = <&kp>, <&kp>;
@@ -25,7 +25,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <180>;
+            tapping-term-ms = <175>;
             quick-tap-ms = <170>;
             require-prior-idle-ms = <120>;
             bindings = <&mo>, <&kp>;
