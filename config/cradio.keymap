@@ -62,14 +62,14 @@
         sym_1 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │  &       │  [       │  ]       │  ^       │  %       │
-            &trans     &trans     &trans     &trans     &trans         &kp AMPS   &kp LBKT  &kp RBKT   &kp CARET   &kp PRCNT
+        //│          │    "     │    |     │    &     │          │   │  &       │  [       │  ]       │  ^       │  %       │
+            &trans       DQT,       PIPE,      AMPS,     &trans         &kp AMPS   &kp LBKT  &kp RBKT   &kp CARET   &kp PRCNT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  =       │   │ -        │  (       │  )       │  *       │  '       │
             HRML(EXCL,     AT,       HASH,      DLLR,      EQUAL)     HRMR(MINUS,    LPAR,      RPAR,      ASTRK, SINGLE_QUOTE)  
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  CAPS    │  RALT    │  ESC     │          │   │ _        │  {       │  }       │  `       │  \       │
-           &trans      &kp CLCK   &kp RALT   &kp ESCAPE  &trans       &kp UNDER   &kp LBRC   &kp RBRC   &kp GRAVE   &kp BSLH
+           &trans     &caps_word  &kp RALT   &kp ESCAPE  &trans       &kp UNDER   &kp LBRC   &kp RBRC   &kp GRAVE   &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
