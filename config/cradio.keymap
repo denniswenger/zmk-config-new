@@ -15,14 +15,14 @@
     key-positions = <KEYPOS>; \
     layers = <0>; \
   };
-#define MACRO(NAME, BINDINGS)                 \
-macro_##NAME: macro_##NAME {              \
-    compatible     = "zmk,behavior-macro";\
-    tap-ms         = <1>;                 \
-    wait-ms        = <1>;                 \
-    #binding-cells = <0>;                 \
-    bindings       = <BINDINGS>;              \
-};
+#define MACRO(NAME, BINDINGS) \
+  macro_##NAME: macro_##NAME { \
+    compatible     = "zmk,behavior-macro"; \
+    tap-ms         = <1>; \
+    wait-ms        = <1>; \
+    #binding-cells = <0>; \
+    bindings       = <&macro_tap BINDINGS>; \
+  };
 
 / {
     behaviors {
@@ -58,7 +58,6 @@ macro_##NAME: macro_##NAME {              \
         combos {
             compatible = "zmk,combos";
             COMBO_0(settings, &sl 5, 30 31)
-            // FIXME: Add arrows to combos
             COMBO_0(arrow, &macro_arrow, 26 28)
             COMBO_0(fat_arrow, &macro_fat_arrow, 27 28)
         };  
