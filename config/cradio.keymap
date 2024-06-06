@@ -47,17 +47,17 @@
         };
     };
 
-    # macros {
-    #     MACRO(arrow, &kp MINUS &kp GT)
-    #     MACRO(fat_arrow, &kp EQUAL &kp GT)
-    # };
-    # 
-    # combos {
-    #     compatible = "zmk,combos";
-    #     COMBO_0(settings, &sl 5, 30 31)
-    #     COMBO_0(arrow, &macro_arrow, 26 28)
-    #     COMBO_0(fat_arrow, &macro_fat_arrow, 27 28)
-    # };  
+    // macros {
+    //     MACRO(arrow, &kp MINUS &kp GT)
+    //     MACRO(fat_arrow, &kp EQUAL &kp GT)
+    // };
+    // 
+    // combos {
+    //     compatible = "zmk,combos";
+    //     COMBO_0(settings, &sl 5, 30 31)
+    //     COMBO_0(arrow, &macro_arrow, 26 28)
+    //     COMBO_0(fat_arrow, &macro_fat_arrow, 27 28)
+    // };  
 
     // conditional_layers {
     //    compatible = "zmk,conditional-layers";
