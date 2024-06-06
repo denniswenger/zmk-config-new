@@ -90,7 +90,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │    "     │    |     │    &     │          │   │  &       │  [       │  ]       │  ^       │  %       │
-            &trans       DQT        PIPE       AMPS      &trans         &kp AMPS   &kp LBKT  &kp RBKT   &kp CARET   &kp PRCNT
+            &trans     &kp DQT    &kp PIPE   &kp AMPS   &trans         &kp AMPS   &kp LBKT  &kp RBKT   &kp CARET   &kp PRCNT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  =       │   │ -        │  (       │  )       │  *       │  '       │
             HRML(EXCL,     AT,       HASH,      DLLR,      EQUAL)     HRMR(MINUS,    LPAR,      RPAR,      ASTRK, SINGLE_QUOTE)  
