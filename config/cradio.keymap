@@ -30,8 +30,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <190>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
@@ -40,8 +40,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <190>;
             require-prior-idle-ms = <125>;
             bindings = <&mo>, <&kp>;
         };
@@ -54,7 +54,7 @@
     
     combos {
         compatible = "zmk,combos";
-        COMBO_0(settings, &sl 5, 30 31)
+        // COMBO_0(settings, &sl 5, 30 31)
         COMBO_0(arrow, &macro_arrow, 26 28)
         COMBO_0(fat_arrow, &macro_fat_arrow, 27 28)
     };  
@@ -81,7 +81,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lht 1 TAB  &lht 4 ENTER    &lht 3 SPACE  &lht 2 BSPC
+                                            &lht 1 TAB  &lht 4 ENTER  &lht 3 SPACE  &lht 2 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
