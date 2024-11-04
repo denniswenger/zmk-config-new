@@ -60,8 +60,8 @@
         COMBO_0(right_square_bracket, &kp RBKT, 6 8)
         COMBO_0(left_parentesis, &kp LPAR, 11 13)
         COMBO_0(right_parentesis, &kp RPAR, 16 18)
-        COMBO_0(left_bracket, &kp LBKC, 21 23)
-        COMBO_0(right_bracket, &kp RBKC, 26 28)
+        COMBO_0(left_bracket, &kp LBRC, 21 23)
+        COMBO_0(right_bracket, &kp RBRC, 26 28)
     };  
 
     // conditional_layers {
