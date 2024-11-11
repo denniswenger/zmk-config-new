@@ -48,7 +48,7 @@
 
         st: shift_tap {
             compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
