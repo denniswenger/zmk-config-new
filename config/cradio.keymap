@@ -63,6 +63,8 @@
         COMBO_0(left_bracket, &kp LBRC, 21 23)
         COMBO_0(right_bracket, &kp RBRC, 26 28)
         COMBO_0(escape, &kp ESCAPE, 16 17)
+        COMBO_0(quote, &kp SINGLE_QUOTE, 11 12)
+        COMBO_0(quote, &kp COLON, 17 18)
     };  
 
     // conditional_layers {
