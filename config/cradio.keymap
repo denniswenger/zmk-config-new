@@ -46,12 +46,12 @@
             bindings = <&mo>, <&kp>;
         };
 
-        st: shift_tap {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp>, <&kp>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+        // st: shift_tap {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp>, <&kp>;
+        //     mods = <(MOD_LSFT|MOD_RSFT)>;
+        // };
     };
 
     macros {
@@ -83,7 +83,7 @@
     // };
 
     keymap {
-       compatible = "zmk,keymap";
+        compatible = "zmk,keymap";
         main_0 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
