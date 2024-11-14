@@ -30,8 +30,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <185>;
-            quick-tap-ms = <185>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
@@ -40,8 +40,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <185>;
-            quick-tap-ms = <185>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
             require-prior-idle-ms = <125>;
             bindings = <&mo>, <&kp>;
         };
@@ -83,7 +83,7 @@
     // };
 
     keymap {
-        compatible = "zmk,keymap";
+k       compatible = "zmk,keymap";
         main_0 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
