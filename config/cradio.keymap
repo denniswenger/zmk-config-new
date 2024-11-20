@@ -72,6 +72,8 @@
         COMBO_0(escape, &kp ESCAPE, 16 17)
         COMBO_0(quote, &kp SINGLE_QUOTE, 11 12)
         COMBO_0(colon, &kp COLON, 17 18)
+        COMBO_0(letter_q, &kp Q, 1 2)
+        COMBO_0(letter_p, &kp P, 7 8)
     };  
 
     // conditional_layers {
